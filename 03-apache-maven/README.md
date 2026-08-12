@@ -20,3 +20,6 @@ mvn compile
 mvn test
 mvn package
 mvn install
+
+Maven is a build and dependency management tool used to
+manage Java projects and their dependencies.
