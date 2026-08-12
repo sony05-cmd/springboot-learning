@@ -10,8 +10,6 @@
 - Constructor Injection
 - Setter Injection
 - IoC (Inversion of Control)
-- Spring IoC Container
-- Spring Beans
 
 ## Practice
 
@@ -19,7 +17,6 @@ Created a notification example using:
 
 - EmailService
 - SmsService
-- PopupService
 - NotificationService
 - OrderService
 
@@ -32,5 +29,3 @@ from outside instead of creating them itself.
 
 IoC means the control of object creation is moved outside
 the class.
-
-Spring automates this using the Spring IoC Container.
