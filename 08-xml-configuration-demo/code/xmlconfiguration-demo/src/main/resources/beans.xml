@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--<bean id="payment" name="paymentS,gateway,transaction" class="com.example.payment.Payment"/> -->
+<bean id="upi" class="com.example.payment.UPIpay"/>
+<bean id="card" class="com.example.payment.Cardpay"/>
+<bean id="order" class="com.example.Order" init-method="start" destroy-method="cleanup" scope="prototype">
+<constructor-arg ref="card"/>
+</bean>
+<!--<bean id="payment1" class="com.example.Payment"/> -->
+
+
+
+
+
+<bean id="user" class="com.example.User">
+<constructor-arg value="sony"/>
+<constructor-arg value="20"/>
+</bean>
+
+<!-- using index 
+<bean id="user" class="com.example.User">
+<constructor-arg index="0" value="sony"/>
+<constructor-arg index="1" value="20"/>
+</bean>-->
+
+</beans>
